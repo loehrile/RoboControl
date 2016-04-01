@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="App1.ConnectScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF18C3C3">
+        <Button x:Name="BackButton" Content="&#xE10E;" FontFamily="Segoe MDL2 Assets" FontSize="24" Click="BackButton_Click" HorizontalAlignment="Left" Height="64" Margin="286,566,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBox x:Name="ConnectText" HorizontalAlignment="Left" Height="239" Margin="74,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213" FontSize="26.667"/>
+        <Button x:Name="RetryButton" Click="RetryButton_Click" Visibility="Collapsed" Content= "Retry" HorizontalAlignment="Left" Height="48" Margin="74,485,0,0" VerticalAlignment="Top" Width="213" FontSize="26.667" Background="#FFF50707"/>
+    </Grid>
+</Page>

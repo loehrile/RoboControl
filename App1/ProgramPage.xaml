@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="App1.ProgramPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="MediumSeaGreen">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="144" Margin="10,10,0,0" TextWrapping="Wrap" Text="Select Control Type" VerticalAlignment="Top" Width="340" FontSize="48" TextAlignment="Center"/>
+        <Button x:Name="Button" Content="Button" Click="Button_Click" HorizontalAlignment="Center" Height="80" Margin="68,160,53,0" VerticalAlignment="Top" Width="239" FontSize="48" Background="#FF0D1EC9"/>
+        <Button x:Name="TiltButton" Content="Tilt" Click="TiltButton_Click" HorizontalAlignment="Center" Height="80" Margin="68,300,53,0" VerticalAlignment="Top" Width="239" FontSize="48" Background="#FF0D1EC9"/>
+        <Button x:Name="SpeechButton" Content="Speech" Click="SpeechButton_Click" HorizontalAlignment="Center" Height="80" Margin="68,440,53,0" VerticalAlignment="Top" Width="239" FontSize="48" Background="#FF0D1EC9"/>
+        <Button x:Name="BackButton" Content="&#xE10E;" FontFamily="Segoe MDL2 Assets" FontSize="24" Click="BackButton_Click" HorizontalAlignment="Left" Height="64" Margin="286,566,0,0" VerticalAlignment="Top" Width="64"/>
+    </Grid>
+</Page>

@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="App1.SpeechProgramPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="RosyBrown">
+        <Button x:Name="BackButton" Content="&#xE10E;" FontFamily="Segoe MDL2 Assets" FontSize="24" Click="BackButton_Click" HorizontalAlignment="Left" Height="64" Margin="286,566,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Height="56" Margin="0,5,0,0" TextWrapping="Wrap" Text="Speech Control" VerticalAlignment="Top" Width="350" FontSize="37.333" TextAlignment="Center"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="69" Margin="10,61,0,0" TextWrapping="Wrap" Text="If I say:           Then:" VerticalAlignment="Top" Width="340" FontSize="33.333"/>
+        <TextBox x:Name="CommandBox1" HorizontalAlignment="Left" Height="48" Margin="10,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" FontSize="26.667"/>
+        <ComboBox x:Name="ActionCombo1" SelectionChanged="ActionCombo1_SelectionChanged" HorizontalAlignment="Left" Height="48" Margin="190,130,0,0" VerticalAlignment="Top" Width="154">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motor 1 forward"/>
+            <ComboBoxItem Content="move motor 1 backward"/>
+            <ComboBoxItem Content="move motor 2 forward"/>
+            <ComboBoxItem Content="move motor 2 backward"/>
+            <ComboBoxItem Content="move motors 1 and 2 forward"/>
+            <ComboBoxItem Content="move motors 1 and 2 backward"/>
+        </ComboBox>
+        <TextBox x:Name="CommandBox2" HorizontalAlignment="Left" Height="48" Margin="10,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" FontSize="26.667"/>
+        <ComboBox x:Name="ActionCombo2" SelectionChanged="ActionCombo2_SelectionChanged" HorizontalAlignment="Left" Height="48" Margin="190,215,0,0" VerticalAlignment="Top" Width="154">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motor 1 forward"/>
+            <ComboBoxItem Content="move motor 1 backward"/>
+            <ComboBoxItem Content="move motor 2 forward"/>
+            <ComboBoxItem Content="move motor 2 backward"/>
+            <ComboBoxItem Content="move motors 1 and 2 forward"/>
+            <ComboBoxItem Content="move motors 1 and 2 backward"/>
+        </ComboBox>
+        <TextBox x:Name="CommandBox3" HorizontalAlignment="Left" Height="48" Margin="10,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" FontSize="26.667"/>
+        <ComboBox x:Name="ActionCombo3" SelectionChanged="ActionCombo3_SelectionChanged" HorizontalAlignment="Left" Height="48" Margin="190,300,0,0" VerticalAlignment="Top" Width="154">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motor 1 forward"/>
+            <ComboBoxItem Content="move motor 1 backward"/>
+            <ComboBoxItem Content="move motor 2 forward"/>
+            <ComboBoxItem Content="move motor 2 backward"/>
+            <ComboBoxItem Content="move motors 1 and 2 forward"/>
+            <ComboBoxItem Content="move motors 1 and 2 backward"/>
+        </ComboBox>
+        <TextBox x:Name="CommandBox4" HorizontalAlignment="Left" Height="48" Margin="10,385,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" FontSize="26.667"/>
+        <ComboBox x:Name="ActionCombo4" SelectionChanged="ActionCombo4_SelectionChanged" HorizontalAlignment="Left" Height="48" Margin="190,385,0,0" VerticalAlignment="Top" Width="154">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motor 1 forward"/>
+            <ComboBoxItem Content="move motor 1 backward"/>
+            <ComboBoxItem Content="move motor 2 forward"/>
+            <ComboBoxItem Content="move motor 2 backward"/>
+            <ComboBoxItem Content="move motors 1 and 2 forward"/>
+            <ComboBoxItem Content="move motors 1 and 2 backward"/>
+        </ComboBox>
+        <TextBox x:Name="CommandBox5" HorizontalAlignment="Left" Height="48" Margin="10,470,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" FontSize="26.667"/>
+        <ComboBox x:Name="ActionCombo5" SelectionChanged="ActionCombo5_SelectionChanged" HorizontalAlignment="Left" Height="48" Margin="190,470,0,0" VerticalAlignment="Top" Width="154">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motor 1 forward"/>
+            <ComboBoxItem Content="move motor 1 backward"/>
+            <ComboBoxItem Content="move motor 2 forward"/>
+            <ComboBoxItem Content="move motor 2 backward"/>
+            <ComboBoxItem Content="move motors 1 and 2 forward"/>
+            <ComboBoxItem Content="move motors 1 and 2 backward"/>
+        </ComboBox>
+        <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save"  HorizontalAlignment="Left" Height="60" Margin="107,566,0,0" VerticalAlignment="Top" Width="125" Background="#FF1DC90C" FontSize="32" RenderTransformOrigin="0.522,0.875"/>
+    </Grid>
+</Page>

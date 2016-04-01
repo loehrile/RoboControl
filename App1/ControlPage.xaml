@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="App1.ControlPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="BlanchedAlmond">
+        <Button x:Name="UpButton" Content="&#xE010;" PointerPressed="UpButton_PointerPressed" PointerReleased="UpButton_PointerReleased" FontFamily="Segoe MDL2 Assets" FontSize="24" HorizontalAlignment="Left" Height="64" Margin="149,152,0,0" VerticalAlignment="Top" Width="64" Background="#FF15BB04"/>
+        <Button x:Name="StopButton" Content="&#xE10A;" PointerPressed="StopButton_PointerPressed" FontFamily="Segoe MDL2 Assets" FontSize="24" HorizontalAlignment="Left" Height="64" Margin="149,275,0,0" VerticalAlignment="Top" Width="64" Background="#FF15BB04"/>
+        <Button x:Name="LeftButton" Content="&#xE00E;" PointerPressed="LeftButton_PointerPressed" PointerReleased="LeftButton_PointerReleased" FontFamily="Segoe MDL2 Assets" FontSize="24" HorizontalAlignment="Left" Height="64" Margin="10,275,0,0" VerticalAlignment="Top" Width="64" Background="#FF15BB04"/>
+        <Button x:Name="RightButton" Content="&#xE00F;" PointerPressed="RightButton_PointerPressed" PointerReleased="RightButton_PointerReleased" FontFamily="Segoe MDL2 Assets" FontSize="24" HorizontalAlignment="Left" Height="64" Margin="286,275,0,0" VerticalAlignment="Top" Width="64" Background="#FF15BB04"/>
+        <Button x:Name="DownButton" Content="&#xE011;" PointerPressed="DownButton_PointerPressed" PointerReleased="DownButton_PointerReleased" FontFamily="Segoe MDL2 Assets" FontSize="24" HorizontalAlignment="Left" Height="64" Margin="149,399,0,0" VerticalAlignment="Top" Width="64" Background="#FF15BB04"/>
+        <Button x:Name="BackButton" Content="&#xE10E;" FontFamily="Segoe MDL2 Assets" FontSize="24" Click="BackButton_Click" HorizontalAlignment="Left" Height="64" Margin="286,566,0,0" VerticalAlignment="Top" Width="64"/>
+        <ToggleSwitch x:Name="SpeechSwitch" Header="Speech Control" HorizontalAlignment="Left" Height="53" Margin="196,10,0,0" VerticalAlignment="Top" Width="67" HorizontalContentAlignment="Right" FlowDirection="RightToLeft" Toggled="SpeechSwitch_Toggled" />
+        <ToggleSwitch x:Name="TiltSwitch" Header="Tilt Control" Toggled="TiltSwitch_Toggled" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="67" HorizontalContentAlignment="Left" />
+
+    </Grid>
+</Page>

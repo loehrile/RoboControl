@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="App1.TiltProgramPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="DeepSkyBlue">
+        <Button x:Name="BackButton" Content="&#xE10E;" FontFamily="Segoe MDL2 Assets" FontSize="24" Click="BackButton_Click" HorizontalAlignment="Left" Height="64" Margin="286,566,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Height="56" Margin="0,10,0,0" TextWrapping="Wrap" Text="Tilt Control" VerticalAlignment="Top" Width="350" FontSize="37.333" TextAlignment="Center"/>
+        <TextBlock x:Name="IfText1" HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="If the device tilts on the x-axis, then:" VerticalAlignment="Top" Height="102" Width="340" FontSize="32" Foreground="Black"/>
+        <ComboBox x:Name="TiltXCombo" SelectionChanged="TiltXCombo_SelectionChanged" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="340">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motor 1"/>
+            <ComboBoxItem Content="move motor 2"/>
+            <ComboBoxItem Content="move motors 1 and 2"/>
+        </ComboBox>
+        <ComboBox x:Name="TiltYCombo" SelectionChanged="TiltYCombo_SelectionChanged" HorizontalAlignment="Left" Margin="10,322,0,0" VerticalAlignment="Top" Width="340">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motor 1"/>
+            <ComboBoxItem Content="move motor 2"/>
+            <ComboBoxItem Content="move motors 1 and 2"/>
+        </ComboBox>
+        <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save"  HorizontalAlignment="Left" Height="60" Margin="107,566,0,0" VerticalAlignment="Top" Width="125" Background="#FF1DC90C" FontSize="32"/>
+        <TextBlock x:Name="IfText2" HorizontalAlignment="Left" Margin="10,215,0,0" TextWrapping="Wrap" Text="If the device tilts on the y-axis, then:" VerticalAlignment="Top" Height="102" Width="340" FontSize="32" Foreground="Black"/>
+        <TextBlock x:Name="IfText3" HorizontalAlignment="Left" Margin="10,359,0,0" TextWrapping="Wrap" Text="If the device tilts on the x-axis and y-axis, then*:" VerticalAlignment="Top" Height="87" Width="340" FontSize="32" Foreground="Black"/>
+        <ComboBox x:Name="TiltXYCombo" SelectionChanged="TiltXYCombo_SelectionChanged" HorizontalAlignment="Left" Margin="10,476,0,0" VerticalAlignment="Top" Width="340">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="move motors 1 and 2"/>
+        </ComboBox>
+        <TextBlock x:Name="Note" HorizontalAlignment="Left" Height="30" Margin="10,508,0,0" TextWrapping="Wrap" Text="* Motor 1 assumed left" VerticalAlignment="Top" Width="266"/>
+    </Grid>
+</Page>
